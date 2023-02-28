@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Componente from "./components/Component";
 import "./App.css";
 
 function App() {
@@ -46,6 +47,19 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
       </div>
+      <section>
+        <Componente msg="Hola, soy un Componente Funcional Expresado desde una prop" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </section>
       <div></div>
     </>
   );
