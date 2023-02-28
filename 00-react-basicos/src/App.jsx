@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import Componente from "./components/Component";
+import Propiedades from "./components/Propiedades";
 import "./App.css";
 
 function App() {
@@ -49,16 +50,19 @@ function App() {
       </div>
       <section>
         <Componente msg="Hola, soy un Componente Funcional Expresado desde una prop" />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <hr />
+        <Propiedades
+          cadena="Esto es una cadena de texto"
+          numero={19}
+          booleano={false}
+          arreglo={[1, 2, 3]}
+          objeto={{ nombre: "Hdoc", correo: "hdocdev@gmail.com" }}
+          funcion={(num) => num * num}
+          elementoReact={<i>Esto es un elemento React</i>}
+          componenteReact={
+            <Componente msg="Soy un componente pasado como Prop" />
+          }
+        />
       </section>
       <div></div>
     </>
