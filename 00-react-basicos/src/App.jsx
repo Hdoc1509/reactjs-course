@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import Componente from "./components/Component";
 import Propiedades from "./components/Propiedades";
 import "./App.css";
+import Estado from "./components/Estado";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -63,6 +64,8 @@ function App() {
             <Componente msg="Soy un componente pasado como Prop" />
           }
         />
+        <hr />
+        <Estado />
       </section>
       <div></div>
     </>
