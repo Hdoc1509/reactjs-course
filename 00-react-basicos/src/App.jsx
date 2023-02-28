@@ -2,8 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import Componente from "./components/Component";
 import Propiedades from "./components/Propiedades";
-import "./App.css";
 import Estado from "./components/Estado";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -66,6 +67,8 @@ function App() {
         />
         <hr />
         <Estado />
+        <hr />
+        <RenderizadoCondicional />
       </section>
       <div></div>
     </>
