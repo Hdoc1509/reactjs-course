@@ -4,9 +4,9 @@ import Componente from "./components/Component";
 import Propiedades from "./components/Propiedades";
 import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
-import "./App.css";
 import RenderizadoElementos from "./components/RenderizadoElementos";
-import Eventos from "./components/Eventos";
+import { EventosES6, EventosES7 } from "./components/Eventos";
+import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -74,7 +74,9 @@ function App() {
         <hr />
         <RenderizadoElementos />
         <hr />
-        <Eventos />
+        <EventosES6 />
+        <hr />
+        <EventosES7 />
       </section>
     </>
   );
