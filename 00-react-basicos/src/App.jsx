@@ -8,6 +8,7 @@ import RenderizadoElementos from "./components/RenderizadoElementos";
 import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes";
 import "./App.css";
+import CicloVida from "./components/CicloVida";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -82,6 +83,8 @@ function App() {
         <MasSobreEventos />
         <hr />
         <ComunicacionComponentes />
+        <hr />
+        <CicloVida />
       </section>
     </>
   );
