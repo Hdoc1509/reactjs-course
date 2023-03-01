@@ -6,6 +6,7 @@ import Estado from "./components/Estado";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import "./App.css";
 import RenderizadoElementos from "./components/RenderizadoElementos";
+import Eventos from "./components/Eventos";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -72,8 +73,9 @@ function App() {
         <RenderizadoCondicional />
         <hr />
         <RenderizadoElementos />
+        <hr />
+        <Eventos />
       </section>
-      <div></div>
     </>
   );
 }
