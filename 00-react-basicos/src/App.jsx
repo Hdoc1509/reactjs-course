@@ -10,6 +10,7 @@ import ComunicacionComponentes from "./components/ComunicacionComponentes";
 import "./App.css";
 import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
+import ContadorHooks from "./components/ContadorHooks";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -88,6 +89,8 @@ function App() {
         <CicloVida />
         <hr />
         <AjaxApis />
+        <hr />
+        <ContadorHooks titulo="Seguidores" />
       </section>
     </>
   );
