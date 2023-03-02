@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import "./App.css";
 import Componente from "./components/Component";
 import Propiedades from "./components/Propiedades";
 import Estado from "./components/Estado";
@@ -7,12 +8,12 @@ import RenderizadoCondicional from "./components/RenderizadoCondicional";
 import RenderizadoElementos from "./components/RenderizadoElementos";
 import { EventosES6, EventosES7, MasSobreEventos } from "./components/Eventos";
 import ComunicacionComponentes from "./components/ComunicacionComponentes";
-import "./App.css";
 import CicloVida from "./components/CicloVida";
 import AjaxApis from "./components/AjaxApis";
 import ContadorHooks from "./components/ContadorHooks";
 import ScrollHooks from "./components/ScrollHooks";
 import RelojHooks from "./components/RelojHooks";
+import AjaxHooks from "./components/AjaxHooks";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -96,7 +97,9 @@ function App() {
         <hr />
         <ScrollHooks />
         <hr />
-        <RelojHooks></RelojHooks>
+        <RelojHooks />
+        <hr />
+        <AjaxHooks />
       </section>
     </>
   );
