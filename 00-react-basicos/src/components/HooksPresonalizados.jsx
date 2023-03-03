@@ -2,8 +2,8 @@ import React from "react";
 import { useFetch } from "../hooks/useFetch";
 
 export default function HooksPersonalizados() {
-  let url = "https://pokeapi.co/api/v2/pokemons/";
-   url = "https://jsonplaceholder.typicode.com/users"
+  let url = "https://pokeapi.co/api/v2/pokemon/";
+  //url = "https://jsonplaceholder.typicode.com/users"
   //console.log(useFetch());
 
   const { data, isPending, error } = useFetch(url);

@@ -16,6 +16,7 @@ import RelojHooks from "./components/RelojHooks";
 import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPresonalizados";
 import Referencias from "./components/Referencias";
+import Formularios from "./components/Formularios";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -106,6 +107,8 @@ function App() {
         <HooksPersonalizados />
         <hr />
         <Referencias />
+        <hr />
+        <Formularios />
       </section>
     </>
   );
