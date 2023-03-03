@@ -17,6 +17,7 @@ import AjaxHooks from "./components/AjaxHooks";
 import HooksPersonalizados from "./components/HooksPresonalizados";
 import Referencias from "./components/Referencias";
 import Formularios from "./components/Formularios";
+import Estilos from "./components/Estilos";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -109,6 +110,8 @@ function App() {
         <Referencias />
         <hr />
         <Formularios />
+        <hr />
+        <Estilos />
       </section>
     </>
   );
