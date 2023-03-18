@@ -25,7 +25,7 @@ export const helpHttp = () => {
         res.ok
           ? res.json()
           : Promise.reject({
-              error: true,
+              err: true,
               status: res.status ?? "00",
               statusText: res.statusText ?? "Ocurrió un error",
             })
