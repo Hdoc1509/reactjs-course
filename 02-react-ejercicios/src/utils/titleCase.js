@@ -3,3 +3,4 @@ export const titleCase = (word) =>
 
 export const titleCaseAll = (string) =>
   string.split(" ").map(titleCase).join(" ");
+

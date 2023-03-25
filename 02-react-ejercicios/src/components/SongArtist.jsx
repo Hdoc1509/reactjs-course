@@ -1,5 +1,5 @@
 import React from "react";
-import { titleCaseAll } from "../helpers/helpTitleCase";
+import { titleCaseAll } from "../utils/titleCase";
 
 const SongArtist = ({ artist }) => {
   return (
