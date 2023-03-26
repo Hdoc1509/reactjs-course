@@ -1,6 +1,6 @@
-export const titleCase = (word) =>
+export const capitalize = (word) =>
   `${word.charAt(0).toUpperCase()}${word.slice(1)}`;
 
-export const titleCaseAll = (string) =>
-  string.split(" ").map(titleCase).join(" ");
+export const capitalizeAll = (string) =>
+  string.split(" ").map(capitalize).join(" ");
 
