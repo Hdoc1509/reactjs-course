@@ -7,3 +7,5 @@ export const SOMERANDOMAPI_URL = 'https://some-random-api.ml'
 export const SPOTIFY_API_URL = 'https://api.spotify.com/v1'
 export const SPOTIFY_API_FREE_TOKEN_URL = 'https://open.spotify.com/get_access_token'
 export const SPOTIFY_API_FREE_TOKEN_CORS_URL = `${HEROKU_CORS}${SPOTIFY_API_FREE_TOKEN_URL}`
+
+export const GEOAPI_URL = 'https://apiv1.geoapi.es'
