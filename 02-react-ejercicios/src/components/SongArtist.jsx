@@ -1,5 +1,5 @@
 import React from "react";
-import { capitalizeAll } from "../utils/titleCase";
+import { capitalizeAll } from "../utils/capitalize";
 
 const SongArtist = ({ artist }) => {
   return (
