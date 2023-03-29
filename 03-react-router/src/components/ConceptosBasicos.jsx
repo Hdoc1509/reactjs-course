@@ -1,8 +1,26 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Acerca from "../pages/Acerca";
 import Contacto from "../pages/Contacto";
+import Error404 from "../pages/Error404";
+import Home from "../pages/Home";
 
 const ConceptosBasicos = () => {
+  return (
+    <div>
+      <h2>Conceptos Básicos</h2>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/acerca" exact component={Acerca} />
+          <Route path="/contacto" exact component={Contacto} />
+          <Route path="*" component={Error404} />
+        </Switch>
+      </Router>
+    </div>
+  );
+};
+
+/*const ConceptosBasicos = () => {
   return (
     <div>
       <h2>Conceptos Básicos</h2>
@@ -29,7 +47,7 @@ const ConceptosBasicos = () => {
               culpa et culpa duis.
             </p>
           </Route>
-          {/*<Route path="/contacto" exact component={Contacto} />*/}
+          <Route path="/contacto" exact component={Contacto} />
           <Route
             path="/contacto"
             exact
@@ -58,6 +76,6 @@ const ConceptosBasicos = () => {
       </Router>
     </div>
   );
-};
+};*/
 
 export default ConceptosBasicos;
