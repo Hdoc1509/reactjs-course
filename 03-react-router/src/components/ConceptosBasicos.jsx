@@ -1,21 +1,23 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Acerca from "../pages/Acerca";
 import Contacto from "../pages/Contacto";
 import Error404 from "../pages/Error404";
 import Home from "../pages/Home";
+import MenuConceptos from './MenuConceptos'
 
 const ConceptosBasicos = () => {
   return (
     <div>
       <h2>Conceptos Básicos</h2>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/acerca" exact component={Acerca} />
-          <Route path="/contacto" exact component={Contacto} />
-          <Route path="*" component={Error404} />
-        </Switch>
-      </Router>
+
+      <MenuConceptos />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/acerca" exact component={Acerca} />
+        <Route path="/contacto" exact component={Contacto} />
+        <Route path="*" component={Error404} />
+      </Switch>
+
     </div>
   );
 };
