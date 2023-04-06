@@ -36,19 +36,24 @@
       "id": 1678489707875
     },
     {
-      "name": "Aldebarán",
-      "constellation": "Tauro",
-      "id": 1678490344464
-    },
-    {
       "name": "Asmita",
       "constellation": "Virgo",
-      "id": 1680820938298
+      "id": 1680822100689
+    },
+    {
+      "name": "Camus",
+      "constellation": "Acuario",
+      "id": 1680823335034
     },
     {
       "name": "Shijima",
       "constellation": "Virgo",
-      "id": 1680821065986
+      "id": 1680823734926
+    },
+    {
+      "name": "Shura",
+      "constellation": "Capricornio",
+      "id": 1680823968322
     }
   ]
 }
