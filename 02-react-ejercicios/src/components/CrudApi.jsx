@@ -42,7 +42,7 @@ const CrudApi = () => {
     };
 
     api.post(url, options).then((res) => {
-      console.log(res);
+      //console.log(res);
 
       if (!res.error) {
         setDb([...db, res]);
