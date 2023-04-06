@@ -4,7 +4,7 @@ import SongArtist from "./SongArtist";
 import SongLyric from "./SongLyric";
 
 const SongDetails = ({ search, lyric, biography }) => {
-  if (lyric === null || biography === null) return;
+  if (lyric === null || biography === null) return null;
 
   return (
     <>
