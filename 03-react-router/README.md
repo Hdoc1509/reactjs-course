@@ -18,5 +18,5 @@ VITE_LASTFM_API_KEY=your_lastfm_api_key
 
 For avoid cors errors this project is using [CORS Anywhere proxy](https://github.com/Rob--W/cors-anywhere).
 
-**Before start development server** be sure to visit https://cors-anywhere.herokuapp.com/ and click on the "Request temporary access to the demo server" button.
+**Before start development server** be sure to visit https://cors-anywhere.herokuapp.com/corsdemo and click on the "Request temporary access to the demo server" button.
 
