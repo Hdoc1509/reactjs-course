@@ -35,12 +35,13 @@ textarea {
 }
 
 button,
+input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   border: thin solid #444;
   border-radius: 0.25rem;
   padding: 0.5rem 1rem;
-  margin: 0.5rem 0 0;
+  margin: 0 0.5rem 0 0;
   display: inline-block;
   background-color: #eee;
   color: #444;
@@ -51,6 +52,13 @@ input[type="reset"] {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+}
+
+input[type="button"]:disabled {
+  border-color: rgba(118, 118, 118, 0.3);
+  color: rgba(16, 16, 16, 0.3);
+  background-color: rgba(239, 239, 239, 0.3);
+  cursor: default;
 }
 
 form {

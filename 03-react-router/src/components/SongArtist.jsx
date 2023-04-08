@@ -1,4 +1,3 @@
-import React from "react";
 import { capitalizeAll } from "../utils/capitalize";
 
 const SongArtist = ({ artist }) => {
@@ -7,7 +6,10 @@ const SongArtist = ({ artist }) => {
       <h3>{artist.name}</h3>
       <img src={artist.image[0].url} alt={artist.name} />
       <p>{capitalizeAll(artist.genres.join(" - "))}</p>
-      <p dangerouslySetInnerHTML={{__html: artist.bio.content}} />
+      <p
+        dangerouslySetInnerHTML={{ __html: artist.bio.content }}
+        style={{ whiteSpace: "pre-wrap" }}
+      />
     </section>
   );
 };

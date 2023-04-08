@@ -14,9 +14,9 @@ function App() {
         Documentación
       </a>
       <hr />
-      {/*<SongSearch />*/}
+      <SongSearch />
       <hr />
-      <CrudApi />
+      {/*<CrudApi />*/}
       <hr />
       {/*<ConceptosBasicos />*/}
     </div>
