@@ -98,7 +98,7 @@ th,
 td {
   text-align: left;
   padding: 0.5rem;
-  border-bottom: thins solid #dedede;
+  border-bottom: thin solid #dedede;
 }
 
 .active {
