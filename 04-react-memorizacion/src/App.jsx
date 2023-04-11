@@ -1,4 +1,4 @@
-import Contador from "./assets/components/Contador";
+import Contador from "./components/Contador";
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           Úsalo cuando:
           <ul>
             <li>Tenemos muchos elementos renderizados en una lista</li>
-            <li>Llamamos a datos de API's</li>
+            <li>Llamamos a datos de APIs</li>
             <li>Un componente se vuelve muy pesado</li>
             <li>Salen alertas de rendimiento en la consola</li>
           </ul>
