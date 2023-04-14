@@ -1,0 +1,27 @@
+{
+  "name": "react-course",
+  "version": "1.0.0",
+  "description": "react course of @jonmircha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hdoc1509/reactjs-course.git"
+  },
+  "keywords": [
+    "react",
+    "course"
+  ],
+  "author": "Hdoc1509",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hdoc1509/reactjs-course/issues"
+  },
+  "homepage": "https://github.com/Hdoc1509/reactjs-course#readme",
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "4.6.0",
+    "semistandard": "16.0.1"
+  }
+}
