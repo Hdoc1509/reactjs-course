@@ -42,7 +42,7 @@ const LanguageProvider = ({ children }) => {
     setTexts(translations[newLanguage]);
   };
 
-  const data = { language, texts, handleLanguage };
+  const data = { texts, handleLanguage };
 
   return (
     <LanguageContext.Provider value={data}>{children}</LanguageContext.Provider>
