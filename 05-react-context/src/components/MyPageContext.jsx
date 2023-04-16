@@ -8,15 +8,15 @@ import MainContext from "./MainContext";
 const MyPageContext = () => {
   return (
     <div className="my-page">
-      <ThemeProvider>
-        <LanguageProvider>
-          <AuthProvider>
+      <AuthProvider>
+        <ThemeProvider>
+          <LanguageProvider>
             <HeaderContext />
             <MainContext />
             <FooterContext />
-          </AuthProvider>
-        </LanguageProvider>
-      </ThemeProvider>
+          </LanguageProvider>
+        </ThemeProvider>
+      </AuthProvider>
     </div>
   );
 };
