@@ -7,7 +7,7 @@ import {
 } from "../types";
 
 export const initialState = {
-  db: null,
+  db: [],
 };
 
 export function crudReducer(state = initialState, action) {
