@@ -14,10 +14,10 @@ import Loader from "./Loader";
 import Message from "./Message";
 
 const CrudApi = () => {
-  //const [state, dispatch] = useReducer(crudReducer, crudInitialState);
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
   const { db } = state.crud;
+
   const [dataToEdit, setDataToEdit] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -34,18 +34,16 @@ const CrudApi = () => {
         //console.log(res);
         if (!res.error) {
           //setDb(res);
-          //dispatch({ type: TYPES.READ_ALL_DATA, payload: res });
           dispatch(readAllData(res));
           setError(null);
         } else {
           //setDb(null);
-          //dispatch({ type: TYPES.NO_DATA });
           dispatch(noData());
           setError(res);
         }
         setLoading(false);
       });
-  }, [url]);
+  }, [url, dispatch]);
 
   const createData = (data) => {
     data.id = Date.now();
@@ -61,7 +59,6 @@ const CrudApi = () => {
 
       if (!res.error) {
         //setDb([...db, res]);
-        //dispatch({ type: TYPES.CREATE_DATA, payload: res });
         dispatch(createSaintData(res));
       } else {
         setError(res);
@@ -83,7 +80,6 @@ const CrudApi = () => {
         //const newData = db.map((el) => (el.id === data.id ? data : el));
 
         //setDb(newData);
-        //dispatch({ type: TYPES.UPDATE_DATA, payload: data });
         dispatch(updateSaintData(data));
       } else {
         setError(res);
@@ -107,7 +103,6 @@ const CrudApi = () => {
           //const newData = db.filter((el) => el.id !== id);
 
           //setDb(newData);
-          //dispatch({ type: TYPES.DELETE_DATA, payload: id });
           dispatch(deleteSaintData(id));
         } else {
           setError(res);
