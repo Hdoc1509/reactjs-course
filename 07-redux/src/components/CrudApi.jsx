@@ -31,10 +31,16 @@ const CrudApi = () => {
     helpHttp()
       .get(url)
       .then((res) => {
-        //console.log(res);
+        // console.dir(res);
         if (!res.error) {
           //setDb(res);
-          dispatch(readAllData(res));
+          if (res instanceof DOMException) {
+            dispatch(noData());
+            console.error(res);
+          } else {
+            dispatch(readAllData(res));
+          }
+
           setError(null);
         } else {
           //setDb(null);
