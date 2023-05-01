@@ -6,8 +6,6 @@ import TeoriaRedux from "./components/TeoriaRedux";
 import store from "./store";
 
 function App() {
-  // TODO: Create functionality of CrudApi with redux
-  // TODO: See video ReactJS 99
   return (
     <Provider store={store}>
       <div style={{ textAlign: "center" }}>
