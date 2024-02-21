@@ -84,7 +84,7 @@ export default function ComponentesEstilizados() {
       <MyH3 color="#61dafb">
         Hola, soy un h3 estilizado con styled-components
       </MyH3>
-      <MyH3 isButton={true}>Soy un h3 estilizado como botón</MyH3>
+      <MyH3 isButton>Soy un h3 estilizado como botón</MyH3>
       <ThemeProvider theme={light}>
         <Box>Soy una caja light</Box>
         <BoxRounded>Soy una caja redondeada light</BoxRounded>
