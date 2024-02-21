@@ -22,6 +22,6 @@
   "homepage": "https://github.com/Hdoc1509/reactjs-course#readme",
   "devDependencies": {
     "eslint-plugin-react-hooks": "4.6.0",
-    "semistandard": "16.0.1"
+    "semistandard": "17.0.0"
   }
 }
